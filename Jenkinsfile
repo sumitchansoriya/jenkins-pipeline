@@ -8,7 +8,8 @@ pipeline {
 		echo '******************'
                 echo '***BUILDING JAR***'
 		echo '******************'
-		./jenkins/build/mvn.sh mvn -B -DskipTests clean package
+		cd my-app
+		mvn -B -DskipTests clean package
 		
 		'''
             }
